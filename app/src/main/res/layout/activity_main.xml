@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorBeig"
+    tools:context="com.example.esraa.drrobot.MainActivity">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:padding="8dp"
+
+        android:id="@+id/linearLayout">
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Type Here"
+            android:id="@+id/textInput"
+            android:gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:padding="8dp"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/roundedbutton"
+            android:layout_alignParentBottom="true" />
+        <ImageButton
+            android:background="@drawable/circularbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:id="@+id/sendButton"
+            android:layout_gravity="center"
+            android:tint="#ffffff"
+            android:src="@mipmap/ic_send_black_36dp" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linearLayout"
+        android:layout_below="@id/tool_bar"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:id="@+id/scrollView"
+        >
+        <LinearLayout
+            android:gravity="bottom"
+
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2"
+            android:layout_marginLeft="16dp">
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
